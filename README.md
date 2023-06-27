@@ -1,5 +1,6 @@
 # Renode-Test
 
+- Example with BLE using nrf52840 https://renode.readthedocs.io/en/latest/tutorials/ble-simulation.html
 - https://zephyr-dashboard.renode.io/renodepedia/boards/ there are many .repl available
   - Not all of them have BLE! Only nrf52840 for now.. See radio: Wireless.NRF52840_Radio
 - Use convertor DTS to REPL https://github.com/antmicro/dts2repl: dts2repl
