@@ -1,10 +1,18 @@
 # Renode-Test
 
+- MIT - License
+- Active community with with nice docs
+- Emulator can help getting inside the system (step by step state,..)
+  - Most of the time we don't need to emulate everything (AHB bus, BLE modulator, Interconnects)
+  - We want to emulate peripherals (RNG, I2C,..), memory and code execution
 - Example with BLE using nrf52840 https://renode.readthedocs.io/en/latest/tutorials/ble-simulation.html
 - https://zephyr-dashboard.renode.io/renodepedia/boards/ there are many .repl available
   - Not all of them have BLE! Only nrf52840 for now.. See radio: Wireless.NRF52840_Radio
 - Use convertor DTS to REPL https://github.com/antmicro/dts2repl: dts2repl
   - Use it on `build/zephyr/zephyr.dts`
+- Available peripherals:
+  - LIS2DW12 accelerometer sensor
+- Example demo https://www.youtube.com/watch?v=AuDlYbwVF0g
 
 (monitor) mach create "nrf52-0"
 (nrf52-0) machine LoadPlatformDescription @output.repl
